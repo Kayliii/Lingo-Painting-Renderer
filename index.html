@@ -3,14 +3,14 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Lingo 1 Painting Previewer</title>
+  <title>Lingo 1 Painting Renderer</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
   <main>
     <div id='settings'>
-      <h1>Lingo 1 Painting Previewer</h1>
+      <h1>Lingo 1 Painting Renderer</h1>
       <div id='picker'>
         <label for='paintings'>Choose paintings to upload:</label>
         <input type='file' id='paintings' name='paintings' accept='.tscn' multiple>
@@ -26,7 +26,13 @@
     <div id='gallery'></div>
   </main>
   <div id='credits'>
-    Thanks to gremlin and rand p for helping with this.
+    <p>
+      Thanks to gremlin and rand p for helping with this.
+    </p>
+    <ul id='foot'>
+      <li><a href='https://github.com/Kayliii/Lingo-Painting-Renderer'>GitHub</a> (<a href='https://github.com/Kayliii/Lingo-Painting-Renderer/issues'>Issues</a>)</li>
+      <li><a href='http://www.lingothegame.com/'>Lingo</a></li>
+    </ul>
   </div>
   <script src='meshlibs.js'></script>
   <script src='main.js'></script>

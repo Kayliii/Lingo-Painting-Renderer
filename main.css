@@ -29,12 +29,12 @@ h1 {
   text-align: center;
   padding: min(calc(var(--scale) * 0.25em), 1em);
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(187, 187, 187, 0);
   transition: background-color 0.15s linear;
 }
 
 #gallery > div:hover {
-  background-color: #bbb;
+  background-color: rgb(187, 187, 187);
 }
 
 #settings {
@@ -74,6 +74,34 @@ h1 {
   padding: 0 2em;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#foot {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  margin: auto;
+  padding: 0;
+  font-size: 90%;
+  color: #cdcdcd;
+}
+
+#foot > li:not(:first-child)::before {
+  content: "•";
+  padding: 0 1rem;
+}
+
+a, a:visited {
+  color: #4e4e4e;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #1b1b1b;
@@ -81,10 +109,18 @@ h1 {
   }
 
   #gallery > div {
-    background-color: #1b1b1b;
+    background-color: rgb(68, 68, 68, 0);
   }
 
   #gallery > div:hover {
-    background-color: #444;
+    background-color: rgb(68, 68, 68);
+  }
+
+  #foot {
+    color: #4e4e4e;
+  }
+
+  a, a:visited {
+    color: #cdcdcd;
   }
 }
